@@ -19,9 +19,9 @@ def charCount(str)
   return result
 end
 def outputCharcount(chars)
-  puts "lowercase: #{chars[0]}"
-  puts "uppercase: #{chars[1]}"
-  puts "numbers:   #{chars[2]}"
-  puts "symbols:   #{chars[3]}"
+  puts "lowercase: #{chars[0]} "
+  puts "uppercase: #{chars[1]} "
+  puts "numbers:   #{chars[2]} "
+  puts "symbols:   #{chars[3]} "
 end
 outputCharcount(charCount(gets.chomp))
