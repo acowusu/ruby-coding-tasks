@@ -1,7 +1,7 @@
 #20-------------
 puts "20-------------"
 puts " welcome to the vending machine "
-puts "pick a drink:  \n\r1 for coke   -30p\n\r2 for pepsi  -50p\n\r3 for apple  -£1.30\n\r4 for orange -70p\n\r5 for soup   -90p"
+puts "pick a drink:  \n1 for coke   -30p\n2 for pepsi  -50p\n3 for apple  -£1.30\n4 for orange -70p\n5 for soup   -90p"
 print "enter a number"
 balence = 0
 drinkprices = [30, 50, 130, 70, 90,0]
@@ -37,7 +37,7 @@ def changeout(change, coins)
     if (change/coins[i]).floor !=0
       #print (coins[i].to_s) +"pence pieces :"
       #puts (change/coins[i]).floor
-      result +=  (coins[i].to_s) +"pence pieces :"+(change/coins[i]).floor.to_s + "\n\r"
+      result +=  (coins[i].to_s) +"pence pieces :"+(change/coins[i]).floor.to_s + "\n"
     end
     # print (coins[i].to_s) +"s"
     # puts (change/coins[i]).floor

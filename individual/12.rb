@@ -1,5 +1,5 @@
 puts "12-------------"
-print "this app checks the number of ech type of charactor\n \renter a string to check: "
+print "this app checks the number of ech type of charactor\nrenter a string to check: "
 def charCouunt(str)
   result = [0,0,0,0]
   str.gsub!(/[a-z]/, "l")

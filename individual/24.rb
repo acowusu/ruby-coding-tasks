@@ -25,7 +25,7 @@ def getbirthdays
   end
 end
 def birthdaymenu
-  puts "enter \n\r1 to view all birthdays \n\r2 to view all birthdays today\n\r3 to add a birthday "
+  puts "enter \n1 to view all birthdays \n2 to view all birthdays today\n3 to add a birthday "
   option = gets.to_i
   if option == 1
     getbirthdays

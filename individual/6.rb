@@ -18,4 +18,4 @@ end
 print "all munbers before"
 puts numsbefore(gets.to_i)
 print "odd munbers before"
-puts numsbefore(gets.to_i, TRUE)
+puts numsbefore(gets.to_i, true)

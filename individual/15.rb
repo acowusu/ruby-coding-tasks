@@ -14,7 +14,7 @@ puts "15-------------"
 # | b\   2 3 1 3 1 2
 # | r\   a a a b b b
 # ---------------
-puts "lets play rock paper scisors enter \n\r1 for rock \n\r2 for paper\n\r3 for scisors\n\r"
+puts "lets play rock paper scisors enter \n1 for rock \n2 for paper\n3 for scisors\n"
 def startRPs(player)
 
   computer = rand(1..3)

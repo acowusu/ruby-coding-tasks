@@ -15,7 +15,7 @@ end
 def game(number, testing, tries)
   alreadyTried = false
   if number == testing
-    puts "well done you found it\n\ryou've had " + (tries.length.to_s) +" tries"
+    puts "well done you found it\nyou've had " + (tries.length.to_s) +" tries"
     return
   elsif number < testing
     puts "try going lower"

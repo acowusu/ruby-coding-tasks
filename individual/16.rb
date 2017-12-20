@@ -1,6 +1,6 @@
 #16-------------
 puts "16-------------"
-puts " lets shuffle a list \n\rit started like this : \n\r[1,2,3,4,5] \n\rthe result is "
+puts " lets shuffle a list \nit started like this : \n[1,2,3,4,5] \nthe result is "
 def shuffle(list)
   list.sort_by { rand }
 end
