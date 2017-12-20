@@ -1,17 +1,25 @@
 #13-------------
 puts "13-------------"
 def strToArr(str)
-  result = [0]
+  result = []
+  cache = ""
   for i in 0..str.length-1
     #print str[i]
     if str[i] != ","
-       result[result.length-1] = str[i].to_i
-
+       #result[result.length-1] = str[i].to_i
+       cache+= str[i]
     else
-      result.push("")
+      if cache!=""
+        result.push(cache.to_i)
+        cache = ""
+      end
     end
   end
-  #print result
+  if cache!=""
+    result.push(cache.to_i)
+    cache = ""
+  end  #print result
+
   return result
 end
 def consec(arr)
