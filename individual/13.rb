@@ -18,8 +18,7 @@ def strToArr(str)
   if cache!=""
     result.push(cache.to_i)
     cache = ""
-  end  #print result
-
+  end  
   return result
 end
 def consec(arr)
