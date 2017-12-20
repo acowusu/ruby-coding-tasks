@@ -9,15 +9,14 @@ def strToArr(str)
        #result[result.length-1] = str[i].to_i
        cache+= str[i]
     else
-      if cache!=""
+      unless cache==""
         result.push(cache.to_i)
         cache = ""
       end
     end
   end
-  if cache!=""
+  unless cache==""
     result.push(cache.to_i)
-    cache = ""
   end
   return result
 end
@@ -29,15 +28,14 @@ def consec(arr)
   end
   return false
 end
-puts "the numbers 1,2,3,4,5 are consecutive"
-puts consec(strToArr("1,2,3,4,5"))
+puts "the numbers 1,2,3,4,5 are consecutive : #{consec(strToArr("1,2,3,4,5"))}"
 puts "check your own set of numbers using a comma separated list"
 puts consec(strToArr(gets.chomp))
 
 puts "b-------------"
-def repeatedv2(numbers)
+def repeated(numbers)
   frequency  = Hash.new(0)
   numbers.each { |e| frequency[e] +=1}
   return (frequency.values.select { |e| e>1 }.length>0)
 end
-puts repeatedv2(strToArr(gets.chomp))
+puts repeated(strToArr(gets.chomp))
