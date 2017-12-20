@@ -18,7 +18,7 @@ def strToArr(str)
   if cache!=""
     result.push(cache.to_i)
     cache = ""
-  end  
+  end
   return result
 end
 def consec(arr)
@@ -35,15 +35,9 @@ puts "check your own set of numbers using a comma separated list"
 puts consec(strToArr(gets.chomp))
 
 puts "b-------------"
-
-def repeated(numbers)
-  for i in 0..numbers.length-1
-    for j in 0..numbers.length-1
-      if numbers[i] == numbers[j] && i!=j
-        return true
-      end
-    end
-  end
-  return false
+def repeatedv2(numbers)
+  frequency  = Hash.new(0)
+  numbers.each { |e| frequency[e] +=1}
+  return (frequency.values.select { |e| e>1 }.length>0)
 end
-puts repeated(strToArr(gets.chomp))
+puts repeatedv2(strToArr(gets.chomp))
