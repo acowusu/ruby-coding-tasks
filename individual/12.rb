@@ -18,8 +18,10 @@ def charCouunt(str)
   end
   return result
 end
-chars = charCouunt(gets.chomp)
-puts "lowercase: #{chars[0]}"
-puts "uppercase: #{chars[1]}"
-puts "numbers:   #{chars[2]}"
-puts "symbols:   #{chars[3]}"
+def outputCharcount(chars)
+  puts "lowercase: #{chars[0]}"
+  puts "uppercase: #{chars[1]}"
+  puts "numbers:   #{chars[2]}"
+  puts "symbols:   #{chars[3]}"
+end
+outputCharcount(charCouunt(gets.chomp))
