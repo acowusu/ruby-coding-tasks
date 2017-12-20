@@ -1,8 +1,8 @@
 def autocomment(file)
   lines  = File.readlines(file)
   lines.map! do |line|
-    print line[0..line.length-2]+"           # "
-    line = line[0..line.length-2]+"           # "+gets
+    print line[0..line.length-2]+"\t\t# "
+    line = line[0..line.length-2]+"\t\t# "+gets
   end
   File.open("commented/"+file, "w+") do |f|
     lines.each { |element| f.puts(element) }
