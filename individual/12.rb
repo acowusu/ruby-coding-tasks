@@ -21,5 +21,5 @@ end
 chars = charCouunt(gets.chomp)
 puts "lowercase: #{chars[0]}"
 puts "uppercase: #{chars[1]}"
-puts "numbers: #{chars[2]}"
-puts "symbols: #{chars[3]}"
+puts "numbers:   #{chars[2]}"
+puts "symbols:   #{chars[3]}"
