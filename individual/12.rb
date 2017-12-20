@@ -1,5 +1,5 @@
 puts "12-------------"
-print "this app checks the number of ech type of charactor\nrenter a string to check: "
+print "this app checks the number of ech type of charactor\nenter a string to check: "
 def charCouunt(str)
   result = [0,0,0,0]
   str.gsub!(/[a-z]/, "l")
@@ -19,11 +19,7 @@ def charCouunt(str)
   return result
 end
 chars = charCouunt(gets.chomp)
-print "lowercase: "
-puts chars[0]
-print "uppercase: "
-puts chars[1]
-print "numbers: "
-puts chars[2]
-print "symbols: "
-puts chars[3]
+puts "lowercase: #{chars[0]}"
+puts "uppercase: #{chars[1]}"
+puts "numbers: #{chars[2]}"
+puts "symbols: #{chars[3]}"
