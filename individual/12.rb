@@ -1,6 +1,6 @@
 puts "12-------------"
 print "this app checks the number of ech type of charactor\nenter a string to check: "
-def charCouunt(str)
+def charCount(str)
   result = [0,0,0,0]
   str.gsub!(/[a-z]/, "l")
   str.gsub!(/[A-Z]/, "u")
@@ -24,4 +24,4 @@ def outputCharcount(chars)
   puts "numbers:   #{chars[2]}"
   puts "symbols:   #{chars[3]}"
 end
-outputCharcount(charCouunt(gets.chomp))
+outputCharcount(charCount(gets.chomp))
