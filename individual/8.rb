@@ -13,7 +13,7 @@ def start_game(diff)
   game(number, gets.to_i, Array.new)
 end
 def game(number, testing, tries)
-  alreadyTried = FALSE
+  alreadyTried = false
   if number == testing
     puts "well done you found it\n\ryou've had " + (tries.length.to_s) +" tries"
     return
@@ -24,7 +24,7 @@ def game(number, testing, tries)
   end
   for i in 0..tries.length-1
     if tries[i] ==testing
-      alreadyTried  = TRUE
+      alreadyTried  = true
     end
   end
 

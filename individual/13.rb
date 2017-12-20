@@ -17,10 +17,10 @@ end
 def consec(arr)
   for i in 0..arr.length
     if arr[i] == arr[i+1].to_i-1 || arr[i] == arr[i-1].to_i-1
-      return TRUE
+      return true
     end
   end
-  return FALSE
+  return false
 end
 puts "the numbers 1,2,3,4,5 are consecutive"
 puts consec(strToArr("1,2,3,4,5"))
@@ -33,10 +33,10 @@ def repeated(numbers)
   for i in 0..numbers.length-1
     for j in 0..numbers.length-1
       if numbers[i] == numbers[j] && i!=j
-        return TRUE
+        return true
       end
     end
   end
-  return FALSE
+  return false
 end
 puts repeated(strToArr(gets.chomp))

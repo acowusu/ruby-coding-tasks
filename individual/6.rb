@@ -1,5 +1,5 @@
 puts "6-------------"
-def numsbefore(number, odd = FALSE)
+def numsbefore(number, odd = false)
   sum = 0
   if odd
     for i in 1..number
