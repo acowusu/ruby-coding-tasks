@@ -1,11 +1,11 @@
 puts "11-------------"
 def palinodrone(inp)
   for i in 0..(inp.length/2).floor-1
-    if inp[i] != inp[(inp.length-1)-i]
+    if inp[i] != inp[-(i+1)]
       return false
     end
   end
   return true
 end
-puts "abc is a palinodrone : " + palinodrone("aq").to_s
-puts "aba is a palinodrone : " + palinodrone("aqa").to_s
+puts "abcdef is a palinodrone : #{palinodrone("abcdef").to_s}"
+puts "abcdcba is a palinodrone : #{palinodrone("abcdcba").to_s}"
