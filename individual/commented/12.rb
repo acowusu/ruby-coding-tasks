@@ -1,6 +1,6 @@
 puts "12-------------"           # 
 print "this app checks the number of ech type of charactor\n \renter a string to check: "           # 
-def charCouunt(str)           # define function
+def charCount(str)           # define function
   result = [0,0,0,0]           # make array of length 4
   str.gsub!(/[a-z]/, "l")           # raplace all the lowercase letters with 1
   str.gsub!(/[A-Z]/, "u")           # replase all the uppercase letters with u
@@ -18,7 +18,7 @@ def charCouunt(str)           # define function
   end           # 
   return result           # 
 end           # 
-chars = charCouunt(gets.chomp)           # run it
+chars = charCount(gets.chomp)           # run it
 print "lowercase: "           # 
 puts chars[0]           # 
 print "uppercase: "           # 

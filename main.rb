@@ -221,7 +221,7 @@ end
 puts palinodrone("aq")
 puts "12-------------"
 puts "this app checks the number of ech type of charactor\n \renter a string to check"
-def charCouunt(str)
+def charCount(str)
   result = [0,0,0,0]
   str.gsub!(/[a-z]/, "l")
   str.gsub!(/[A-Z]/, "u")
@@ -239,7 +239,7 @@ def charCouunt(str)
   end
   return result
 end
-chars = charCouunt(gets.chomp)
+chars = charCount(gets.chomp)
 print "lowercase: "
 puts chars[0]
 print "uppercase: "
@@ -487,7 +487,7 @@ write_handler = File.new("result.out", "w")
 
 # Puts the text in the file
 write_handler.puts().to_s
-count = charCouunt(File.read("sites.txt"))
+count = charCount(File.read("sites.txt"))
 write_handler.puts("lowercase:" + count[0].to_s).to_s
 write_handler.puts("uppercase :" + count[1].to_s).to_s
 write_handler.puts("numbers  :" + count[2].to_s).to_s
