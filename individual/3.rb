@@ -1,5 +1,4 @@
 puts "3-------------"
-
 def mean(numbers)
   return numbers.inject(0.0) { |sum, el| sum + el } / numbers.size
 end
@@ -12,7 +11,7 @@ def median(numbers)
     difference = upper-lower
     median  = lower.to_f+difference.to_f/2
   else
-    median  =numbers[(numbers.length/2).ceil]
+    median  =numbers[(numbers.length/2).floor]
   end
   return median
 end
@@ -38,12 +37,9 @@ def average(numbers)
   puts "sorted:"
   puts numbers
   puts "3c-------------"
-  puts "mean"
-  puts mean(numbers)
-  puts "mode"
-  puts mode(numbers)
-  puts "median"
-  puts median(numbers)
+  puts "mean\n#{mean(numbers)}"
+  puts "mode\n#{mode(numbers)}"
+  puts "median\n #{median(numbers)}"
 end
 puts "enter 5 numbers and  will find the average of them"
 average([gets.to_i,gets.to_i,gets.to_i,gets.to_i,gets.to_i])

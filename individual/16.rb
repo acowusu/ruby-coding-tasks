@@ -5,4 +5,4 @@ def shuffle(list)
   list.sort_by { rand }
 end
 print shuffle([1,2,3,4,5])
-puts ""
+puts 

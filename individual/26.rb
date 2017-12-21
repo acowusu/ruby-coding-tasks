@@ -7,20 +7,14 @@ def strToArr(str)
     if str[i] == " "
       result.push(cache)
       cache = ""
-       #result[result.length-1] = str[i]
     else
         cache+=str[i]
 
     end
   end
   result.push(cache)
-
-  #print result
   return result
 end
-
-
-
 def isalpha(str)
   str  = str.downcase
   table = Hash.new
@@ -30,12 +24,10 @@ def isalpha(str)
     table[i] = j
     j += 1
   end
-  #print table
   for i in 0..str.length
     temp[i] = table[str[i]]
   end
    temp.pop()
-  #print temp
   for i in 1..(temp.length-1)
     if (temp[i].to_i < temp[i-1].to_i)
       return false
@@ -44,9 +36,6 @@ def isalpha(str)
 
   return true
 end
-
-
-  #puts isalpha(gets.chomp)
 def doalpha(arr)
   res = []
   arr.each  do |e|

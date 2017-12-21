@@ -6,8 +6,6 @@ def ceasor(str, places)
   for i in 0..str.length-1
     for j in 0..letters.length-1
       if str[i] == letters[j]
-
-        #puts "letters [i +places] is "+( (j+places>25) ? letters[(j+places)-25] : letters[j+places])
         result += (j+places>26)? letters[(j+places)-26] : letters[j+places]
       end
     end

@@ -17,7 +17,7 @@ def insert_money(inserted)
    a.gsub!(/£1/, "100")
    a.gsub!(/[\D]/, "")
    a=a.to_i
-   if (a==1||a==2||a==5||a==10||a==20||a==50||a==100)
+   if (a==1||a==2||a==5||a==10||a==20||a==50||a==100) #a
      return a.to_i
    end
    return 0

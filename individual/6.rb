@@ -11,6 +11,7 @@ def numsbefore(number, odd = false)
     for i in 1..number
       sum += i
     end
+    
   end
 
   return sum

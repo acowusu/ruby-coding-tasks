@@ -7,8 +7,10 @@ def start_game(diff)
     number = rand(1..500)
   elsif diff =="hard"
     number = rand(1..1000)
-  else
+  elsif diff == "impossible"
     number = rand(1..100000)
+  else
+    return nil
   end
   game(number, gets.to_i, Array.new)
 end
