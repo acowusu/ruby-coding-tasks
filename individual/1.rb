@@ -1,21 +1,17 @@
 
 puts "1a-------------"
-def threetimestable()
+def timestable(n)
   for i in 1..12
-    puts 3*i
+    puts n*i
   end
 end
-threetimestable()
+
+timestable(3)
 puts "1b-------------"
 for j in 1..12
-  for i in 1..12
-    puts j*i
-  end
+  timestable(j)
   puts
 end
 puts "1c-------------"
 puts "Write your number: "
-input  = gets.to_i
-for i in 1..12
-  puts input*i
-end
+timestable(gets.to_i)
